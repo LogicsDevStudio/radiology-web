@@ -3,75 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | กลุ่มงานรังสีวิทยา</title>
+    <title>หน้าหลัก | กลุ่มงานรังสีวิทยา</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .hero {
-            background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
-            color: white;
-            padding: 80px 40px;
-            border-radius: 15px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .hero h1 { color: white; font-size: 42px; margin-bottom: 15px; }
-        .hero p { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            text-align: center;
-        }
-        .feature-card h3 { margin-bottom: 15px; }
-    </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="brand-logo">รังสีวิทยา</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="active">หน้าแรก</a></li>
-                <li class="nav-item"><a href="services.html">ข้อมูลบริการ</a></li>
-                <li class="nav-item"><a href="staff.html">แผนผังบุคลากร</a></li>
-                <li class="nav-item"><a href="schedule.html">ตารางแพทย์</a></li>
-                <li class="nav-item"><a href="contact.html">ติดต่อเรา</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">RADIOLOGY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">หน้าหลัก</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">เกี่ยวกับหน่วยงาน</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html#history">ประวัติหน่วยงาน</a></li>
+                            <li><a class="dropdown-item" href="about.html#vision">วิสัยทัศน์และค่านิยม</a></li>
+                            <li><a class="dropdown-item" href="about.html#structure">โครงสร้างการบริหาร</a></li>
+                            <li><a class="dropdown-item" href="about.html#staff">บุคลากร</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">บริการประชาชน</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#diagnostic">รังสีวินิจฉัย</a></li>
+                            <li><a class="dropdown-item" href="services.html#interventional">รังสีร่วมรักษา</a></li>
+                            <li><a class="dropdown-item" href="services.html#oncology">รังสีรักษา</a></li>
+                            <li><a class="dropdown-item" href="services.html#nuclear">เวชศาสตร์นิวเคลียร์</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">งานวิจัยและนวัตกรรม</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">คำถามที่พบบ่อย</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="main-content">
-        <div class="hero">
-            <h1>กลุ่มงานรังสีวิทยา</h1>
-            <p>มุ่งมั่นให้บริการตรวจวินิจฉัยทางรังสีด้วยเทคโนโลยีที่ทันสมัย ถูกต้อง รวดเร็ว และปลอดภัยตามมาตรฐานสากล</p>
-            <a href="services.html" class="btn-custom">ดูบริการของเรา</a>
+    <header class="bg-primary text-white text-center py-5" style="background: linear-gradient(135deg, #0d6efd, #0dcaf0);">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">ศูนย์ความเป็นเลิศทางรังสีวิทยา</h1>
+            <p class="lead mt-3">ให้บริการวินิจฉัยและรักษาด้วยเทคโนโลยีที่ทันสมัย แม่นยำ และปลอดภัยสูงสุด</p>
         </div>
+    </header>
 
-        <div class="features">
-            <div class="feature-card">
-                <h3>บริการตรวจวินิจฉัย</h3>
-                <p>ให้บริการเอกซเรย์ทั่วไป, อัลตราซาวด์, CT Scan และ MRI ด้วยเครื่องมือความละเอียดสูง</p>
-            </div>
-            <div class="feature-card">
-                <h3>การเตรียมตัวก่อนตรวจ</h3>
-                <p>ข้อมูลคำแนะนำอย่างละเอียดสำหรับผู้ป่วยในการเตรียมตัวเพื่อให้ผลตรวจแม่นยำที่สุด</p>
-            </div>
-            <div class="feature-card">
-                <h3>ทีมแพทย์ผู้เชี่ยวชาญ</h3>
-                <p>ดูแลและอ่านผลโดยรังสีแพทย์และนักรังสีการแพทย์ที่มีประสบการณ์สูง</p>
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="text-primary mb-4">เกี่ยวกับเรา (About Us)</h2>
+            <p class="text-secondary w-75 mx-auto" style="font-size: 1.1rem;">
+                กลุ่มงานรังสีวิทยา มุ่งมั่นให้บริการถ่ายภาพทางการแพทย์และรังสีร่วมรักษา เพื่อประกอบการวินิจฉัยของแพทย์ผู้รักษาได้อย่างแม่นยำ ด้วยทีมรังสีแพทย์และนักรังสีการแพทย์ผู้เชี่ยวชาญ พร้อมเครื่องมือระดับโลก
+            </p>
+            <a href="about.html" class="btn btn-outline-primary mt-3">อ่านเพิ่มเติม</a>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center text-primary mb-5">บริการของเรา (Our Services)</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="card-title text-dark">รังสีวินิจฉัย</h4>
+                            <p class="text-muted mt-3">เอกซเรย์ทั่วไป, อัลตราซาวด์, เอกซเรย์คอมพิวเตอร์ (CT Scan) และคลื่นแม่เหล็กไฟฟ้า (MRI)</p>
+                            <a href="services.html#diagnostic" class="btn btn-sm btn-primary mt-2">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="card-title text-dark">รังสีร่วมรักษา</h4>
+                            <p class="text-muted mt-3">การรักษาผ่านหลอดเลือดโดยไม่ต้องผ่าตัดใหญ่ เช่น การอุดกั้นหลอดเลือด (TACE)</p>
+                            <a href="services.html#interventional" class="btn btn-sm btn-primary mt-2">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="card-title text-dark">รังสีรักษา</h4>
+                            <p class="text-muted mt-3">การฉายรังสีเพื่อรักษาโรคมะเร็ง ด้วยเทคโนโลยีที่ตรงจุดและลดผลข้างเคียง</p>
+                            <a href="services.html#oncology" class="btn btn-sm btn-primary mt-2">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 p-3">
+                        <div class="card-body">
+                            <h4 class="card-title text-dark">เวชศาสตร์นิวเคลียร์</h4>
+                            <p class="text-muted mt-3">การตรวจการทำงานของอวัยวะด้วยสารเภสัชรังสี (PET/CT, Bone Scan)</p>
+                            <a href="services.html#nuclear" class="btn btn-sm btn-primary mt-2">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 กลุ่มงานรังสีวิทยา โรงพยาบาลของคุณ | ปรับแต่งระบบด้วยใจ</p>
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center text-primary mb-5">ข่าวสารและกิจกรรม (News Update)</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">รูปภาพข่าว</div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">บริการใหม่</span>
+                            <h5 class="card-title">เปิดตัวเครื่อง MRI รุ่นใหม่ 3 Tesla</h5>
+                            <p class="card-text text-muted">เพิ่มศักยภาพการตรวจวินิจฉัยที่แม่นยำยิ่งขึ้น ลดเวลาในการสแกน...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">รูปภาพข่าว</div>
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">กิจกรรม</span>
+                            <h5 class="card-title">อบรมวิชาการรังสีวิทยาประจำปี</h5>
+                            <p class="card-text text-muted">เชิญชวนบุคลากรทางการแพทย์เข้าร่วมฟังบรรยายอัปเดตความรู้...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">รูปภาพข่าว</div>
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">ประกาศ</span>
+                            <h5 class="card-title">ปรับปรุงพื้นที่แผนกเอกซเรย์</h5>
+                            <p class="card-text text-muted">แจ้งปิดปรับปรุงพื้นที่ให้บริการบางส่วนในวันที่ 1-5 เดือนหน้า...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="mb-5 text-white">สถานที่ให้บริการในเครือข่าย (Our Branches)</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5">
+                    <div class="p-4 border border-secondary rounded">
+                        <h4 class="text-info">ศูนย์รังสีวิทยาหลัก (รพ.ศูนย์)</h4>
+                        <p class="mb-0">อาคารผู้ป่วยนอก ชั้น 1<br>ให้บริการทุกวัน 24 ชั่วโมง (กรณีฉุกเฉิน)</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 border border-secondary rounded">
+                        <h4 class="text-info">ศูนย์คัดกรองมะเร็งเต้านม</h4>
+                        <p class="mb-0">อาคารส่งเสริมสุขภาพ ชั้น 2<br>จันทร์ - ศุกร์ 08:30 - 16:00 น.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 กลุ่มงานรังสีวิทยา | ออกแบบเพื่อบริการประชาชน</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
