@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา | กลุ่มงานรังสีวิทยา</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+        .contact-info h3 { margin-bottom: 15px; border-bottom: 2px solid #edf2f7; padding-bottom: 10px; }
+        .contact-info p { margin-bottom: 10px; }
+        .map-box {
+            background: #edf2f7;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            min-height: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">รังสีวิทยา</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">หน้าแรก</a></li>
+                <li class="nav-item"><a href="services.html">ข้อมูลบริการ</a></li>
+                <li class="nav-item"><a href="staff.html">แผนผังบุคลากร</a></li>
+                <li class="nav-item"><a href="schedule.html">ตารางแพทย์</a></li>
+                <li class="nav-item"><a href="contact.html" class="active">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2 class="page-title">ติดต่อกลุ่มงานรังสีวิทยา</h2>
+        
+        <div class="contact-layout">
+            <div class="contact-info">
+                <h3>สถานที่ตั้ง & เวลาทำการ</h3>
+                <p><strong>อาคาร:</strong> อาคารผู้ป่วยนอก (OPD) ชั้น 1</p>
+                <p><strong>โรงพยาบาล:</strong> [ระบุชื่อโรงพยาบาลของคุณ]</p>
+                <p><strong>เวลาทำการ:</strong> จันทร์ - ศุกร์ เวลา 08:30 - 16:30 น.</p>
+                <p style="color: #e53e3e;">* นอกเวลาราชการ ให้บริการเฉพาะกรณีอุบัติเหตุและฉุกเฉิน</p>
+                
+                <h3 style="margin-top:25px;">ช่องทางการติดต่อ</h3>
+                <p><strong>เบอร์โทรศัพท์:</strong> 02-XXX-XXXX ต่อ 1234</p>
+                <p><strong>อีเมล:</strong> radiology@hospital.go.th</p>
+            </div>
+            
+            <div>
+                <h3>แผนที่หน่วยงาน</h3>
+                <div class="map-box">
+                    [ แปะโค้ด Google Maps เพื่อแสดงแผนที่โรงพยาบาลได้ตรงนี้ ]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 กลุ่มงานรังสีวิทยา โรงพยาบาลของคุณ | ปรับแต่งระบบด้วยใจ</p>
+    </footer>
+
+</body>
+</html>
