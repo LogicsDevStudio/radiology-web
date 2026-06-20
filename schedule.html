@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางแพทย์ออกตรวจ | กลุ่มงานรังสีวิทยา</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #edf2f7;
+            color: var(--primary-color);
+            font-family: 'Kanit', sans-serif;
+        }
+        tr:hover { background-color: #f7fafc; }
+        .note { color: #e53e3e; margin-top: 15px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">รังสีวิทยา</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">หน้าแรก</a></li>
+                <li class="nav-item"><a href="services.html">ข้อมูลบริการ</a></li>
+                <li class="nav-item"><a href="staff.html">แผนผังบุคลากร</a></li>
+                <li class="nav-item"><a href="schedule.html" class="active">ตารางแพทย์</a></li>
+                <li class="nav-item"><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2 class="page-title">ตารางรังสีแพทย์ออกตรวจ</h2>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>วัน</th>
+                        <th>เวลา 08:30 - 12:00 น.</th>
+                        <th>เวลา 13:00 - 16:30 น.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>วันจันทร์</strong></td>
+                        <td>นพ. สมชาย รักดี</td>
+                        <td>พญ. สมหญิง เมตตา</td>
+                    </tr>
+                    <tr>
+                        <td><strong>วันอังคาร</strong></td>
+                        <td>พญ. สมหญิง เมตตา</td>
+                        <td>นพ. สมชาย รักดี</td>
+                    </tr>
+                    <tr>
+                        <td><strong>วันพุธ</strong></td>
+                        <td>นพ. สมชาย รักดี</td>
+                        <td>(เฉพาะเคสฉุกเฉิน)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note">*หมายเหตุ: ตารางเวลาอาจมีการเปลี่ยนแปลงตามภารกิจของแพทย์ กรุณาโทรสอบถามก่อนนัดหมาย</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 กลุ่มงานรังสีวิทยา โรงพยาบาลของคุณ | ปรับแต่งระบบด้วยใจ</p>
+    </footer>
+
+</body>
+</html>
