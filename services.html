@@ -3,70 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลการให้บริการ | กลุ่มงานรังสีวิทยา</title>
+    <title>บริการประชาชน | กลุ่มงานรังสีวิทยา</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .service-list { display: flex; flex-direction: column; gap: 30px; }
-        .service-item {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            border-left: 5px solid var(--accent-color);
-        }
-        .prep-box {
-            background-color: #fffaf0;
-            border: 1px solid #feebc8;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-        .prep-box h4 { color: #dd6b20; margin-bottom: 5px; }
-    </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="brand-logo">รังสีวิทยา</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html">หน้าแรก</a></li>
-                <li class="nav-item"><a href="services.html" class="active">ข้อมูลบริการ</a></li>
-                <li class="nav-item"><a href="staff.html">แผนผังบุคลากร</a></li>
-                <li class="nav-item"><a href="schedule.html">ตารางแพทย์</a></li>
-                <li class="nav-item"><a href="contact.html">ติดต่อเรา</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">RADIOLOGY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">เกี่ยวกับหน่วยงาน</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html#history">ประวัติหน่วยงาน</a></li>
+                            <li><a class="dropdown-item" href="about.html#vision">วิสัยทัศน์และค่านิยม</a></li>
+                            <li><a class="dropdown-item" href="about.html#structure">โครงสร้างการบริหาร</a></li>
+                            <li><a class="dropdown-item" href="about.html#staff">บุคลากร</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">บริการประชาชน</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#diagnostic">รังสีวินิจฉัย</a></li>
+                            <li><a class="dropdown-item" href="services.html#interventional">รังสีร่วมรักษา</a></li>
+                            <li><a class="dropdown-item" href="services.html#oncology">รังสีรักษา</a></li>
+                            <li><a class="dropdown-item" href="services.html#nuclear">เวชศาสตร์นิวเคลียร์</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">งานวิจัยและนวัตกรรม</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">คำถามที่พบบ่อย</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="main-content">
-        <h2 class="page-title">ข้อมูลการให้บริการและการเตรียมตัว</h2>
-        
-        <div class="service-list">
-            <div class="service-item">
-                <h3>1. การตรวจเอกซเรย์ทั่วไป (General X-Ray)</h3>
-                <p>เป็นการตรวจวินิจฉัยโรคเบื้องต้นของทรวงอก ปอด กระดูก และข้อต่อต่างๆ</p>
-                <div class="prep-box">
-                    <h4>⚠️ การเตรียมตัวก่อนตรวจ:</h4>
-                    <p>ไม่ต้องงดน้ำและอาหาร ควรหลีกเลี่ยงการสวมใส่เสื้อผ้าที่มีโลหะหรือสกรีนลายหนาบริเวณที่จะตรวจ</p>
-                </div>
-            </div>
+    <div class="container py-5">
+        <h1 class="text-center text-primary mb-5 border-bottom pb-3">บริการประชาชน</h1>
 
-            <div class="service-item">
-                <h3>2. การตรวจอัลตราซาวด์ (Ultrasound)</h3>
-                <p>การตรวจอวัยวะภายในด้วยคลื่นเสียงความถี่สูง เช่น ช่องท้องส่วนบน ช่องท้องส่วนล่าง หรือเนื้อเยื่อต่างๆ</p>
-                <div class="prep-box">
-                    <h4>⚠️ การเตรียมตัวก่อนตรวจ:</h4>
-                    <p><strong>ตรวจช่องท้องส่วนบน:</strong> งดอาหารและเครื่องดื่มที่มีไขมันอย่างน้อย 6 ชั่วโมง <br>
-                    <strong>ตรวจช่องท้องส่วนล่าง:</strong> ดื่มน้ำเปล่าเยอะๆ และกลั้นปัสสาวะก่อนเข้ารับการตรวจ</p>
+        <section id="diagnostic" class="mb-5 pt-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="text-primary mb-3">1. การตรวจทางรังสีวินิจฉัย (Diagnostic Radiology)</h3>
+                    <p>บริการถ่ายภาพทางการแพทย์เพื่อค้นหารอยโรค ประกอบด้วย:</p>
+                    <ul>
+                        <li><strong>เอกซเรย์ทั่วไป (General X-ray):</strong> ตรวจปอด กระดูก และช่องท้อง</li>
+                        <li><strong>อัลตราซาวด์ (Ultrasound):</strong> ตรวจอวัยวะภายในด้วยคลื่นเสียงความถี่สูง ปลอดภัย ไม่มีรังสี</li>
+                        <li><strong>เอกซเรย์คอมพิวเตอร์ (CT Scan):</strong> ตรวจหาความผิดปกติของอวัยวะในรูปแบบภาพตัดขวาง 3 มิติ</li>
+                        <li><strong>คลื่นแม่เหล็กไฟฟ้า (MRI):</strong> ตรวจเนื้อเยื่ออ่อน สมอง และไขสันหลัง ด้วยความละเอียดสูงสุด</li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="interventional" class="mb-5 pt-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="text-primary mb-3">2. การตรวจทางรังสีร่วมรักษา (Interventional Radiology)</h3>
+                    <p>การใช้เครื่องมือทางรังสีวิทยา นำทางอุปกรณ์ขนาดเล็ก (เช่น สายสวนหลอดเลือด) เข้าไปในร่างกายเพื่อทำการรักษาโดยไม่ต้องผ่าตัดใหญ่:</p>
+                    <ul>
+                        <li>การให้เคมีบำบัดผ่านหลอดเลือดเพื่อรักษามะเร็งตับ (TACE)</li>
+                        <li>การใส่สายระบายน้ำดีในผู้ป่วยท่อน้ำดีอุดตัน (PTBD)</li>
+                        <li>การเจาะชิ้นเนื้อเพื่อส่งตรวจทางพยาธิวิทยา (Image-guided biopsy)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="oncology" class="mb-5 pt-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="text-primary mb-3">3. การตรวจทางรังสีรักษา (Radiation Oncology)</h3>
+                    <p>การใช้รังสีพลังงานสูงในการรักษาโรคมะเร็ง โดยมุ่งเน้นการทำลายเซลล์มะเร็งพร้อมกับสงวนรักษาเนื้อเยื่อปกติที่อยู่รอบข้างให้ได้รับผลกระทบน้อยที่สุด ด้วยเครื่องฉายรังสีแบบปรับความเข้ม (IMRT) และเทคนิคสามมิติ</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nuclear" class="mb-5 pt-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h3 class="text-primary mb-3">4. การตรวจทางเวชศาสตร์นิวเคลียร์ (Nuclear Medicine)</h3>
+                    <p>การนำสารเภสัชรังสีเข้าสู่ร่างกาย เพื่อตรวจติดตามการทำงานของอวัยวะต่างๆ ในระดับเซลล์:</p>
+                    <ul>
+                        <li><strong>PET/CT Scan:</strong> ตรวจการแพร่กระจายของมะเร็งได้อย่างแม่นยำ</li>
+                        <li><strong>Bone Scan:</strong> ตรวจความผิดปกติและการแพร่กระจายของโรคมาที่กระดูก</li>
+                        <li><strong>Thyroid Scan:</strong> ตรวจการทำงานของต่อมไทรอยด์</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <footer>
-        <p>&copy; 2026 กลุ่มงานรังสีวิทยา โรงพยาบาลของคุณ | ปรับแต่งระบบด้วยใจ</p>
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 กลุ่มงานรังสีวิทยา | ออกแบบเพื่อบริการประชาชน</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
