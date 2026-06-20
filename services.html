@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลการให้บริการ | กลุ่มงานรังสีวิทยา</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-list { display: flex; flex-direction: column; gap: 30px; }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            border-left: 5px solid var(--accent-color);
+        }
+        .prep-box {
+            background-color: #fffaf0;
+            border: 1px solid #feebc8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .prep-box h4 { color: #dd6b20; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">รังสีวิทยา</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">หน้าแรก</a></li>
+                <li class="nav-item"><a href="services.html" class="active">ข้อมูลบริการ</a></li>
+                <li class="nav-item"><a href="staff.html">แผนผังบุคลากร</a></li>
+                <li class="nav-item"><a href="schedule.html">ตารางแพทย์</a></li>
+                <li class="nav-item"><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2 class="page-title">ข้อมูลการให้บริการและการเตรียมตัว</h2>
+        
+        <div class="service-list">
+            <div class="service-item">
+                <h3>1. การตรวจเอกซเรย์ทั่วไป (General X-Ray)</h3>
+                <p>เป็นการตรวจวินิจฉัยโรคเบื้องต้นของทรวงอก ปอด กระดูก และข้อต่อต่างๆ</p>
+                <div class="prep-box">
+                    <h4>⚠️ การเตรียมตัวก่อนตรวจ:</h4>
+                    <p>ไม่ต้องงดน้ำและอาหาร ควรหลีกเลี่ยงการสวมใส่เสื้อผ้าที่มีโลหะหรือสกรีนลายหนาบริเวณที่จะตรวจ</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>2. การตรวจอัลตราซาวด์ (Ultrasound)</h3>
+                <p>การตรวจอวัยวะภายในด้วยคลื่นเสียงความถี่สูง เช่น ช่องท้องส่วนบน ช่องท้องส่วนล่าง หรือเนื้อเยื่อต่างๆ</p>
+                <div class="prep-box">
+                    <h4>⚠️ การเตรียมตัวก่อนตรวจ:</h4>
+                    <p><strong>ตรวจช่องท้องส่วนบน:</strong> งดอาหารและเครื่องดื่มที่มีไขมันอย่างน้อย 6 ชั่วโมง <br>
+                    <strong>ตรวจช่องท้องส่วนล่าง:</strong> ดื่มน้ำเปล่าเยอะๆ และกลั้นปัสสาวะก่อนเข้ารับการตรวจ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 กลุ่มงานรังสีวิทยา โรงพยาบาลของคุณ | ปรับแต่งระบบด้วยใจ</p>
+    </footer>
+
+</body>
+</html>
