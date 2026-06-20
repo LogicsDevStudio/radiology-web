@@ -3,180 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="เว็บไซต์กลุ่มงานรังสีวิทยา ให้บริการเอกซเรย์ อัลตราซาวด์ CT Scan และ MRI พร้อมตารางแพทย์และคำแนะนำก่อนตรวจ">
-    <meta name="keywords" content="รังสีวิทยา, เอกซเรย์, อัลตราซาวด์, CT Scan, MRI, โรงพยาบาล">
-    <title>กลุ่มงานรังสีวิทยา | Radiology Department</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>หน้าแรก | กลุ่มงานรังสีวิทยา</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* ปรับแต่ง CSS เพิ่มเติม */
-        body { font-family: 'Sarabun', sans-serif; scroll-behavior: smooth; }
-        section { padding: 80px 0; }
-        .hero-section { background-color: #0d6efd; color: white; padding: 100px 0; text-align: center; }
-        .card-custom { transition: transform 0.3s; }
-        .card-custom:hover { transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .footer { background-color: #212529; color: white; padding: 20px 0; text-align: center; }
+        .hero {
+            background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+            color: white;
+            padding: 80px 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero h1 { color: white; font-size: 42px; margin-bottom: 15px; }
+        .hero p { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        .feature-card h3 { margin-bottom: 15px; }
     </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">รังสีวิทยา</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">หน้าแรก</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">บริการและการเตรียมตัว</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#staff">บุคลากร</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#schedule">ตารางแพทย์</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อเรา</a></li>
-                </ul>
-            </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">รังสีวิทยา</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="active">หน้าแรก</a></li>
+                <li class="nav-item"><a href="services.html">ข้อมูลบริการ</a></li>
+                <li class="nav-item"><a href="staff.html">แผนผังบุคลากร</a></li>
+                <li class="nav-item"><a href="schedule.html">ตารางแพทย์</a></li>
+                <li class="nav-item"><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section id="home" class="hero-section mt-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold">กลุ่มงานรังสีวิทยา</h1>
-            <p class="lead">ให้บริการตรวจวินิจฉัยโรคด้วยเครื่องมือทางรังสีที่ทันสมัย ถูกต้อง แม่นยำ และปลอดภัย</p>
-            <a href="#services" class="btn btn-light btn-lg mt-3">ดูข้อมูลการให้บริการ</a>
+    <div class="main-content">
+        <div class="hero">
+            <h1>กลุ่มงานรังสีวิทยา</h1>
+            <p>มุ่งมั่นให้บริการตรวจวินิจฉัยทางรังสีด้วยเทคโนโลยีที่ทันสมัย ถูกต้อง รวดเร็ว และปลอดภัยตามมาตรฐานสากล</p>
+            <a href="services.html" class="btn-custom">ดูบริการของเรา</a>
         </div>
-    </section>
 
-    <section id="services" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">ข้อมูลการให้บริการและการเตรียมตัวก่อนตรวจ</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card card-custom h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">เอกซเรย์ทั่วไป (General X-ray)</h5>
-                            <p class="card-text">ตรวจความผิดปกติของกระดูก ปอด และอวัยวะภายใน</p>
-                            <hr>
-                            <h6>การเตรียมตัว:</h6>
-                            <ul>
-                                <li>ไม่ต้องงดน้ำและอาหาร</li>
-                                <li>เปลี่ยนเสื้อผ้าและถอดโลหะบริเวณที่จะตรวจ</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-custom h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">อัลตราซาวด์ (Ultrasound)</h5>
-                            <p class="card-text">ตรวจอวัยวะภายในช่องท้องด้วยคลื่นเสียงความถี่สูง</p>
-                            <hr>
-                            <h6>การเตรียมตัว (ช่องท้องส่วนบน):</h6>
-                            <ul>
-                                <li>งดอาหารและเครื่องดื่มที่มีไขมันอย่างน้อย 6-8 ชั่วโมง</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-custom h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">เอกซเรย์คอมพิวเตอร์ (CT Scan)</h5>
-                            <p class="card-text">ตรวจวินิจฉัยรอยโรคที่มีความละเอียดสูงแบบ 3 มิติ</p>
-                            <hr>
-                            <h6>การเตรียมตัว:</h6>
-                            <ul>
-                                <li>หากต้องฉีดสารทึบรังสี ต้องงดอาหาร 4-6 ชั่วโมง (ดื่มน้ำเปล่าได้)</li>
-                                <li>นำผลเลือดค่าการทำงานของไตมาด้วย</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="features">
+            <div class="feature-card">
+                <h3>บริการตรวจวินิจฉัย</h3>
+                <p>ให้บริการเอกซเรย์ทั่วไป, อัลตราซาวด์, CT Scan และ MRI ด้วยเครื่องมือความละเอียดสูง</p>
+            </div>
+            <div class="feature-card">
+                <h3>การเตรียมตัวก่อนตรวจ</h3>
+                <p>ข้อมูลคำแนะนำอย่างละเอียดสำหรับผู้ป่วยในการเตรียมตัวเพื่อให้ผลตรวจแม่นยำที่สุด</p>
+            </div>
+            <div class="feature-card">
+                <h3>ทีมแพทย์ผู้เชี่ยวชาญ</h3>
+                <p>ดูแลและอ่านผลโดยรังสีแพทย์และนักรังสีการแพทย์ที่มีประสบการณ์สูง</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="staff">
-        <div class="container">
-            <h2 class="text-center mb-5">แผนผังบุคลากร</h2>
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="รูปบุคลากร">
-                    <h5>นพ. สมชาย ใจดี</h5>
-                    <p class="text-muted">หัวหน้ากลุ่มงานรังสีวิทยา / รังสีแพทย์</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="รูปบุคลากร">
-                    <h5>พญ. สมหญิง รักษา</h5>
-                    <p class="text-muted">รังสีแพทย์</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="รูปบุคลากร">
-                    <h5>นาย นักรังสี ชำนาญการ</h5>
-                    <p class="text-muted">นักรังสีการแพทย์หัวหน้างาน</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="schedule" class="bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">ตารางแพทย์ออกตรวจ</h2>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped text-center align-middle">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>วัน / เวลา</th>
-                            <th>08:30 - 12:00 น.</th>
-                            <th>13:00 - 16:30 น.</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>จันทร์</strong></td>
-                            <td>นพ. สมชาย ใจดี</td>
-                            <td>พญ. สมหญิง รักษา</td>
-                        </tr>
-                        <tr>
-                            <td><strong>อังคาร</strong></td>
-                            <td>พญ. สมหญิง รักษา</td>
-                            <td>นพ. สมชาย ใจดี</td>
-                        </tr>
-                        <tr>
-                            <td><strong>พุธ</strong></td>
-                            <td>นพ. สมชาย ใจดี</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="text-danger mt-2 text-center">*หมายเหตุ: ตารางอาจมีการเปลี่ยนแปลง โปรดโทรสอบถามล่วงหน้า</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-center mb-5">ติดต่อเรา</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h4>กลุ่มงานรังสีวิทยา โรงพยาบาล...</h4>
-                    <p><strong>สถานที่ตั้ง:</strong> อาคารผู้ป่วยนอก ชั้น 1</p>
-                    <p><strong>เบอร์โทรศัพท์:</strong> 02-XXX-XXXX ต่อ 1234</p>
-                    <p><strong>เวลาทำการ:</strong> จันทร์ - ศุกร์ (08:30 - 16:30 น.) <br> นอกเวลาราชการ ให้บริการเฉพาะผู้ป่วยฉุกเฉิน</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 300px; border-radius: 10px;">
-                        [ พื้นที่สำหรับใส่แผนที่ Google Maps ]
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 กลุ่มงานรังสีวิทยา โรงพยาบาล... | สงวนลิขสิทธิ์</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 กลุ่มงานรังสีวิทยา โรงพยาบาลของคุณ | ปรับแต่งระบบด้วยใจ</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
